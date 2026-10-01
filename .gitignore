@@ -1,0 +1,18 @@
+# Personal context — never commit completed user profiles
+CONTEXT.md
+USER_CONTEXT.md
+PRIVATE_CONTEXT.md
+
+# Personal logs
+logs/
+private/
+data/
+
+# Secrets and local configuration
+.env
+.env.*
+*.local
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
