@@ -4,6 +4,14 @@
 
 Dietitian helps people understand their goals, everyday eating habits, preferences, and realistic ways to make progress. It is an open-source set of instructions and templates—not an app, medical service, meal plan, or precision food tracker.
 
+## For AI assistants opening this README
+
+If a user shares this README and asks to get started, read [INSTRUCTIONS.md](INSTRUCTIONS.md) as the core guidance, then begin a natural conversation about their goals and food preferences. Consult [DISCOVERY.md](DISCOVERY.md), [JOURNALING.md](JOURNALING.md), and [CONTEXT_LOADING.md](CONTEXT_LOADING.md) only when relevant. Do not load every file automatically or ask the user to complete a questionnaire. Respect medical constraints and do not claim access to personal context you cannot retrieve.
+
+## Share with a friend
+
+Give your AI this link: https://github.com/hlukas81/dietitian/blob/main/README.md and say, "Read this README and help me get started with Dietitian." If your AI cannot browse GitHub, copy the contents of [INSTRUCTIONS.md](INSTRUCTIONS.md) into the chat instead.
+
 ## Start here
 
 1. Open [INSTRUCTIONS.md](INSTRUCTIONS.md) and give its contents to your AI assistant as the short core guide (for example, paste it into an AI conversation or supported custom instructions). A GitHub link alone does not automatically load the file.
