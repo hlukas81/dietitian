@@ -1,59 +1,55 @@
 # Dietitian
 
-Dietitian is an open context framework for using a large language model as a practical nutrition and behavior coach.
+**A conversation-first nutrition coaching framework for AI.**
 
-It is not a diet program, medical service, diagnosis tool, or treatment system. Its purpose is to help an LLM learn how a person actually eats, what they are trying to accomplish, what patterns matter, and how they want to be coached.
+Dietitian helps people understand their goals, everyday eating habits, preferences, and realistic ways to make progress. It is an open-source set of instructions and templates—not an app, medical service, meal plan, or precision food tracker.
 
-The framework is deliberately small enough that the important rules can be supplied to an LLM together rather than scattered across a large knowledge base.
+## Start here
 
-## Core model
+1. Give your AI assistant [INSTRUCTIONS.md](INSTRUCTIONS.md) as its short, persistent guide.
+2. Say something natural, such as **"I'd like help figuring out an approach to eating that works for me."**
+3. Talk through goals, favorite meals, dislikes, schedules, and what feels sustainable. You do not need an intake form.
+4. If your AI environment can access individual files on demand, follow [CONTEXT_LOADING.md](CONTEXT_LOADING.md) to retrieve only the relevant private context and instructions.
+5. Keep any completed personal context outside this repository. [CONTEXT_TEMPLATE.md](CONTEXT_TEMPLATE.md) provides optional headings, not fields you must fill.
 
-Dietitian separates three things:
+A useful first conversation leaves you feeling understood, with one achievable next step—not a completed questionnaire.
 
-1. **Framework rules** — general instructions for how the LLM should behave.
-2. **Personal context** — user-specific goals, preferences, routines, constraints, and coaching preferences.
-3. **Current conversation** — today's meals, questions, decisions, and short-term circumstances.
+## Philosophy
 
-The open-source repository contains only the framework. Personal context belongs to the individual user and should remain private.
+**Build around food people enjoy. Change what matters, not everything.**
 
-## Files
+- Ask one relevant question at a time, as a thoughtful, direct friend would.
+- Learn how the person actually eats before recommending changes.
+- Treat enjoyment, convenience, routines, and tradeoffs as legitimate design constraints.
+- Offer useful ideas early instead of requiring onboarding completion.
+- Let people discover their own goals and obstacles through conversation.
+- Notice patterns over time, but never turn one meal into a permanent preference.
+- Respect reported clinician guidance. Do not diagnose or prescribe treatment.
 
-- `INSTRUCTIONS.md` — canonical operating rules for the LLM.
-- `DISCOVERY.md` — how the LLM should learn about a user over time.
-- `CONTEXT_TEMPLATE.md` — template for a user's private durable context.
-- `EXAMPLES.md` — fictional examples showing intended behavior.
-- `.gitignore` — helps prevent private context and logs from being committed.
-- `LICENSE` — open-source license.
+## Optional conversational food journaling
 
-## How to use it
+If it naturally comes up, someone can describe food casually throughout the day. Dietitian can estimate roughly and help spot patterns; it should not demand weighed portions or meticulous data entry. Estimates are imperfect, and conversational logs are not a reliable permanent food database. Food journaling is entirely optional.
 
-1. Give your LLM `INSTRUCTIONS.md`.
-2. Use `DISCOVERY.md` while establishing your initial context.
-3. Copy `CONTEXT_TEMPLATE.md` into a private file such as `CONTEXT.md`.
-4. Fill that private context progressively through conversation.
-5. Supply the framework instructions, your private context, and the current conversation to the LLM.
-6. Update durable context only when something is genuinely stable or explicitly chosen.
+## Layered context and token use
 
-## Design principles
+| Layer | When used | Content |
+| --- | --- | --- |
+| Core | Every session | [INSTRUCTIONS.md](INSTRUCTIONS.md) |
+| Relevant private context | Only as needed, subject to essential safety constraints | Goals, preferences, nutrition targets, constraints, and today's working notes |
+| Task guide | Only for that activity | [DISCOVERY.md](DISCOVERY.md) or [JOURNALING.md](JOURNALING.md) |
+| Examples/reference | Occasionally | [EXAMPLES.md](EXAMPLES.md), blank [CONTEXT_TEMPLATE.md](CONTEXT_TEMPLATE.md) |
 
-Dietitian is built around a few principles:
+**Minimum sufficient context, not minimum tokens.** Never omit a material constraint simply to save tokens. The framework cannot automatically fetch files unless the user's AI environment supports it. If selective retrieval is unavailable, supply a concise core and relevant manually selected context. Read [CONTEXT_LOADING.md](CONTEXT_LOADING.md) for the practical rules and limitations.
 
-- Keep the rule set small and explicit.
-- Prefer sustainable behavior change over temporary restriction.
-- Treat food neutrally rather than morally.
-- Separate intentional choices from automatic behavior.
-- Use meaningful protein, satiety, energy, enjoyment, and adherence as practical anchors.
-- Learn a person's preferences instead of forcing a generic meal plan.
-- Do not turn one unusual meal into a permanent preference.
-- Do not invent missing user facts.
-- Do not provide medical advice.
+## Repository files
 
-## Privacy
+- [INSTRUCTIONS.md](INSTRUCTIONS.md): canonical short core instructions.
+- [DISCOVERY.md](DISCOVERY.md): gentle, preference-first conversation guidance for new users.
+- [CONTEXT_LOADING.md](CONTEXT_LOADING.md): layered context, retrieval checks, and token discipline.
+- [JOURNALING.md](JOURNALING.md): optional, approximate conversational food journaling.
+- [CONTEXT_TEMPLATE.md](CONTEXT_TEMPLATE.md): private durable-context template.
+- [EXAMPLES.md](EXAMPLES.md): fictional examples, not persistent prompt material.
 
-Do not commit personal nutrition context, medical information, food logs, body measurements, or other private user information to this repository.
+## Privacy and limitations
 
-The template is public. The completed user context is not.
-
-## Status
-
-This repository is intentionally starting small. The framework should grow only when a new file or rule solves a real recurring problem without duplicating existing instructions.
+Never publish completed context, food logs, health details, or other identifiable information. Review the repository and its commit history for sensitive material before changing visibility to public. AI context and memory behavior differ among products; this repository does not promise automatic memory, complete retrieval, exact nutrition data, or continuity between sessions. Do not present the assistant as a licensed clinician.
