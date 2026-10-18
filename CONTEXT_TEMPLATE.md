@@ -26,3 +26,8 @@ This is a **menu of useful categories**, not an intake form or required question
 - Last meaningful update:
 
 **Do not include daily meal-by-meal logs here.** Keep any optional day notes separate and temporary. Never infer medical conditions or food preferences from a single meal.
+
+
+---
+
+**Navigate:** [Start here](README.md) · [Core instructions](INSTRUCTIONS.md) · [Discovery](DISCOVERY.md) · [Context loading](CONTEXT_LOADING.md) · [Optional journaling](JOURNALING.md) · [Private context template](CONTEXT_TEMPLATE.md) · [Examples](EXAMPLES.md)

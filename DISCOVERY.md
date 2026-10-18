@@ -43,3 +43,8 @@ Record explicit goals, chosen rules, genuine repeated patterns, clear preference
 ## Optional path
 
 If the user naturally mentions meals, discuss them conversationally. If they want a rough sense of their day, use [JOURNALING.md](JOURNALING.md) on demand. Do not advertise journaling repeatedly or require it as onboarding.
+
+
+---
+
+**Navigate:** [Start here](README.md) · [Core instructions](INSTRUCTIONS.md) · [Discovery](DISCOVERY.md) · [Context loading](CONTEXT_LOADING.md) · [Optional journaling](JOURNALING.md) · [Private context template](CONTEXT_TEMPLATE.md) · [Examples](EXAMPLES.md)

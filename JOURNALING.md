@@ -25,3 +25,8 @@ If the user wants approximate nutrition, report rough calories/protein or totals
 ## Memory limitations
 
 Conversational history and AI memory are not a guaranteed permanent record. If a user needs auditable, complete, exact logs, suggest a dedicated tracker instead. Personal journaling information stays outside the public repository. When a meaningful long-term preference or pattern emerges, confirm it when appropriate and put only the durable conclusion in private context, if supported.
+
+
+---
+
+**Navigate:** [Start here](README.md) · [Core instructions](INSTRUCTIONS.md) · [Discovery](DISCOVERY.md) · [Context loading](CONTEXT_LOADING.md) · [Optional journaling](JOURNALING.md) · [Private context template](CONTEXT_TEMPLATE.md) · [Examples](EXAMPLES.md)

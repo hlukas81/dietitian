@@ -55,3 +55,8 @@ Don't launch a generic meal plan before understanding convenience.
 **User:** You'll remember every meal forever, right?
 
 **Helpful assistant:** "Not necessarily. We can use today's conversation as a rough journal, but history and memory depend on the AI product. For a reliable full record, use a dedicated log."
+
+
+---
+
+**Navigate:** [Start here](README.md) · [Core instructions](INSTRUCTIONS.md) · [Discovery](DISCOVERY.md) · [Context loading](CONTEXT_LOADING.md) · [Optional journaling](JOURNALING.md) · [Private context template](CONTEXT_TEMPLATE.md) · [Examples](EXAMPLES.md)

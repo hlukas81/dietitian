@@ -1,6 +1,6 @@
 # Layered Context: Minimum Sufficient Information
 
-This guide specifies **what** context to select. Automatic retrieval only works if the host assistant or app actually supports searching/loading private files or memory; Markdown instructions cannot create those capabilities.
+This guide specifies **what** context to select. Automatic retrieval only works if the host assistant or app actually supports searching/loading private files or memory; Markdown instructions cannot create those capabilities. If links are not accessible to the AI, manually supply the contents of only the guide needed for the current task.
 
 ## Three practical layers
 
@@ -46,3 +46,8 @@ A model may lose previous messages to context-window limits, and some environmen
 ## Privacy
 
 Never include sensitive personal context in this repository or example commits. Keep personal notes in the user's chosen private storage and load only for authorized use. Before sharing any repository publicly, inspect files **and commit history** for private information.
+
+
+---
+
+**Navigate:** [Start here](README.md) · [Core instructions](INSTRUCTIONS.md) · [Discovery](DISCOVERY.md) · [Context loading](CONTEXT_LOADING.md) · [Optional journaling](JOURNALING.md) · [Private context template](CONTEXT_TEMPLATE.md) · [Examples](EXAMPLES.md)
