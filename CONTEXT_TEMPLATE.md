@@ -10,7 +10,7 @@ This is a **menu of useful categories**, not an intake form or required question
 - Primary goal and motivation:
 - Current agreed next step:
 - Established targets or user-chosen rules:
-- Preferred coaching style:
+- Preferred coaching challenge (1–10 if chosen; otherwise their own words; optional and adjustable):
 
 ## Foods and practical life
 - Meals and foods genuinely enjoyed:
