@@ -12,17 +12,13 @@ If a user shares this README and asks to get started, read [INSTRUCTIONS.md](INS
 
 Give your AI this link: https://github.com/hlukas81/dietitian/blob/main/README.md and say, "Read this README and help me get started with Dietitian." If your AI cannot browse GitHub, copy the contents of [INSTRUCTIONS.md](INSTRUCTIONS.md) into the chat instead.
 
-## Start here
+## Getting started
 
-1. Open [INSTRUCTIONS.md](INSTRUCTIONS.md) and give its contents to your AI assistant as the short core guide (for example, paste it into an AI conversation or supported custom instructions). A GitHub link alone does not automatically load the file.
-2. Say something natural, such as **"I'd like help figuring out an approach to eating that works for me."**
-3. Talk through goals, favorite meals, dislikes, schedules, and what feels sustainable. You do not need an intake form.
-4. Use [CONTEXT_LOADING.md](CONTEXT_LOADING.md) to select context. If your AI can access individual files on demand, it may load [DISCOVERY.md](DISCOVERY.md) or [JOURNALING.md](JOURNALING.md) when relevant. Otherwise, paste the relevant guide only when that activity comes up.
-5. Keep any completed personal context outside this repository. [CONTEXT_TEMPLATE.md](CONTEXT_TEMPLATE.md) provides optional headings, not fields you must fill.
+If your AI can open GitHub links, simply share the [README link](https://github.com/hlukas81/dietitian/blob/main/README.md) and ask it to help you get started. The assistant should read the [core guide](INSTRUCTIONS.md) first and then lead a natural conversation about your goals, the foods you enjoy, and what is practical for you.
 
-A useful first conversation leaves you feeling understood, with one achievable next step—not a completed questionnaire.
+There is no required intake form or account setup. Supporting guidance is available selectively: [discovery](DISCOVERY.md) for an initial conversation, [optional journaling](JOURNALING.md) for rough food-pattern discussions, and [context loading](CONTEXT_LOADING.md) for selecting just the relevant information. [EXAMPLES.md](EXAMPLES.md) and [CONTEXT_TEMPLATE.md](CONTEXT_TEMPLATE.md) are references, not required reading.
 
-**Quick route:** New here? Use the core instructions plus the [discovery guide](DISCOVERY.md) if useful. Talking about today's meals? Bring in the [optional journaling guide](JOURNALING.md). Need to carry preferences across sessions? See [context loading](CONTEXT_LOADING.md) and the [private template](CONTEXT_TEMPLATE.md). There is no need to load all files.
+If the AI cannot follow the link, paste the [core instructions](INSTRUCTIONS.md) as a fallback. Do not paste the whole repository by default. Personal context belongs outside this repository.
 
 ## Philosophy
 
